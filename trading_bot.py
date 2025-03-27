@@ -218,13 +218,13 @@ while True:
                             print(f"📌 Placed sell order at {take_profit_price}, Order ID: {order_id}") 
                         last_order_was_buy = False
 
-                    elif current_price <= stop_loss_price:
-                        print(f"⚠️ Stop-Loss triggered at {stop_loss_price}! Selling...")
-                        order =  place_order("sell", stop_loss_price, TRADE_AMOUNT)
-                        if order and "id" in order:
-                            order_id = order["id"]
-                            print(f" 📌 placed sell order at {stop_loss_price}, Order ID: {order_id}")
-                        last_order_was_buy = False
+           #         elif current_price <= stop_loss_price:
+           #             print(f"⚠️ Stop-Loss triggered at {stop_loss_price}! Selling...")
+           #             order =  place_order("sell", stop_loss_price, TRADE_AMOUNT)
+           #            if order and "id" in order:
+           #                 order_id = order["id"]
+           #                 print(f" 📌 placed sell order at {stop_loss_price}, Order ID: {order_id}")
+           #             last_order_was_buy = False
                     elif current_price <= emergency_sell_price: 
                         print(f"EMERGENCY SELLING AT {current_price}, Order ID: {order_id}")
                         order = place_order("sell", current_price, TRADE_AMOUNT)
@@ -265,13 +265,13 @@ while True:
                         print(f"📌 Placed sell order at {take_profit_price}, Order ID: {order_id}")
                         last_order_was_buy = False
 
-                elif current_price <= stop_loss_price:
-                    print(f"⚠️ Stop-Loss triggered at {stop_loss_price}! Selling...")
-                    order =  place_order("sell", stop_loss_price, TRADE_AMOUNT)
-                    if order and "id" in order:
-                        order_id = order["id"]
-                        print(f" 📌 placed sell order at {stop_loss_price}, Order ID: {order_id}")
-                        last_order_was_buy = False
+       #         elif current_price <= stop_loss_price:
+       #             print(f"⚠️ Stop-Loss triggered at {stop_loss_price}! Selling...")
+       #             order =  place_order("sell", stop_loss_price, TRADE_AMOUNT)
+       #             if order and "id" in order:
+       #                 order_id = order["id"]
+       #                 print(f" 📌 placed sell order at {stop_loss_price}, Order ID: {order_id}")
+       #                 last_order_was_buy = False
                 elif current_price <= emergency_sell_price:
                     print(f"EMERGENCY SELLING AT {current_price}, Order ID: {order_id}")
                     order = place_order("sell", current_price, TRADE_AMOUNT)
