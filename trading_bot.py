@@ -19,7 +19,7 @@ exchange = ccxt.binance({
 # Configurable Parameters
 symbol = "FDUSD/USDT"  # Hardcoded symbol for this function
 SYMBOL = "DOGE/FDUSD"
-TRADE_AMOUNT = 40  # Order size in DOGE
+TRADE_AMOUNT = 25  # Order size in DOGE
 SPREAD_PERCENT = 0.1  # Spread percentage for buy/sell
 PROFIT_LOCK_THRESHOLD = 0.5  # Profit threshold before transferring to earn wallet
 PROFIT_TICK_THRESHOLD = 1.0  # Profit threshold for showing the green tick emoji (1 INR)
